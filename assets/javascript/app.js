@@ -1,8 +1,10 @@
 // randomize background array. (not working for some reason)
-// var bgArray = ["../images/arches.jpg", "../images/milky-way.jpg", "../images/road.jpg"];
-// var selectBG = bgArray[Math.floor(Math.random() * bgArray.length)];
+// const bgArray = ["../images/arches.jpg", "../images/milky-way.jpg", "../images/road.jpg"];
+// var selectBG = [Math.floor(Math.random() * bgArray.length)];
 // $("body").css("background", "url('" + selectBG + "')");
-
+// console.log("selectBG: " + selectBG);
+// console.log("random image: " + bgArray[selectBG]);
+// try to hard code the url and see if that works
 
 // Timer
 var timeleft = 10;
