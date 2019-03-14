@@ -1,10 +1,10 @@
 // randomize background array. (not working for some reason)
-// const bgArray = ["../images/arches.jpg", "../images/milky-way.jpg", "../images/road.jpg"];
-// var selectBG = [Math.floor(Math.random() * bgArray.length)];
-// $("body").css("background", "url('" + selectBG + "')");
-// console.log("selectBG: " + selectBG);
-// console.log("random image: " + bgArray[selectBG]);
-// try to hard code the url and see if that works
+var bgArray = ["./assets/images/arches.jpg", "./assets/images/milky-way.jpg", "./assets/images/road.jpg"];
+var selectBG = [Math.floor(Math.random() * bgArray.length)];
+$("body").css("background-image", "url(" + bgArray[selectBG] + ")"); //getting file not found error even when hard coding url path
+console.log("selectBG: " + selectBG); // this logs random correctly, but as an integer
+console.log("random image: " + bgArray[selectBG]); // This logs random image file paths correctly
+
 
 // Timer
 var timeleft = 10;
