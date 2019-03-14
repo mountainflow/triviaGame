@@ -1,5 +1,9 @@
-// randomize background array. (not working for some reason)
-var bgArray = ["./assets/images/arches.jpg", "./assets/images/milky-way.jpg", "./assets/images/road.jpg"];
+// randomize background array.
+var bgArray = ["./assets/images/arches.jpg", "./assets/images/milky-way.jpg", "./assets/images/road.jpg", "./assets/images/anotherArch.jpg",
+    "./assets/images/ArchesNationalParkUtah.jpg", "./assets/images/bridalViel.jpg", "./assets/images/castleValley.jpg", "./assets/images/bryce.jpg",
+    "./assets/images/castleValley_02.jpg", "./assets/images/conservationArch.jpg", "./assets/images/floodedFlats.jpg", "./assets/images/moreArches.jpg",
+    "./assets/images/mtnReflection.jpg", "./assets/images/ponyExpress.jpg", "./assets/images/sunrise.jpg", "./assets/images/twistyRiver.jpg"
+];
 var selectBG = [Math.floor(Math.random() * bgArray.length)];
 $("body").css("background-image", "url(" + bgArray[selectBG] + ")"); //getting file not found error even when hard coding url path
 console.log("selectBG: " + selectBG); // this logs random correctly, but as an integer
